@@ -1,4 +1,4 @@
-export type Languange = {
+export type Language = {
     name: string,
     iso: string
 }

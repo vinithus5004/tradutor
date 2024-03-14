@@ -1,6 +1,6 @@
-import { Languange } from "@/type/Languange";
+import { Language } from "@/type/Language";
 
-export const languanges: Languange[] = [
+export const languages: Language[] = [
     {
         name: 'português brasileiro',
         iso: 'pt-br'

@@ -2,8 +2,8 @@
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { LanguangesOptionsItem } from "@/components/LanguangesOptionsItem";
-import { languanges } from "@/data/languanges";
+import { LanguagesOptionsItem } from "@/components/LanguagesOptionsItem";
+import { languages } from "@/data/languages";
 import { Translate } from "@/type/Translate";
 import { api } from "@/utils/api";
 import { useEffect, useState } from "react";
@@ -26,11 +26,11 @@ const Page = () => {
         if(inputValue.trim() === '') setTranslatedValue('');
     }, [inputValue]);
 
-    const handleSelectedLanguange = (languange: string, translate: Translate) => {
+    const handleSelectedLanguage = (language: string, translate: Translate) => {
         if(translate === 'FROM'){
-            setTranslateFrom(languange);
+            setTranslateFrom(language);
         }else if(translate === 'TO'){
-            setTranslateTo(languange);
+            setTranslateTo(language);
         }
     }
 
@@ -45,11 +45,11 @@ const Page = () => {
             <div className="w-full max-w-sm bg-yellow-200 text-black border rounded-md p-2 md:max-w-2xl">
                 <div className="flex flex-col gap-4 md:flex-row md:p-8">
                     <div className="flex flex-col items-center md:block">
-                        <LanguangesOptionsItem
-                            languanges={languanges}
-                            selectedLanguange={translateFrom}
+                        <LanguagesOptionsItem
+                            languages={languages}
+                            selectedLanguage={translateFrom}
                             translate="FROM"
-                            onSelect={handleSelectedLanguange}
+                            onSelect={handleSelectedLanguage}
                         />
                         <textarea 
                         rows={5}
@@ -62,11 +62,11 @@ const Page = () => {
                     </div>
                     
                     <div className="flex flex-col items-center md:block">
-                        <LanguangesOptionsItem
-                            languanges={languanges}
-                            selectedLanguange={translateTo}
+                        <LanguagesOptionsItem
+                            languages={languages}
+                            selectedLanguage={translateTo}
                             translate="TO"
-                            onSelect={handleSelectedLanguange}
+                            onSelect={handleSelectedLanguage}
                         />
                         <textarea 
                         rows={5}
