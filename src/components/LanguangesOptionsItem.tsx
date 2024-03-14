@@ -12,7 +12,7 @@ export const LanguangesOptionsItem = ({languanges, selectedLanguange, translate,
     return(
         <select 
             onChange={(e) => onSelect(e.target.value, translate)}
-            className="bg-yellow-200 outline-none p-1 border border-yellow-300 rounded-md"
+            className="bg-yellow-300 outline-none p-1 border border-yellow-600 rounded-md"
         >
             {languanges?.map(languange => (
                 selectedLanguange.toLowerCase() === languange.iso

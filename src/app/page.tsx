@@ -42,42 +42,44 @@ const Page = () => {
     return(
         <div className="w-full h-screen flex flex-col justify-between items-center bg-gradient-to-t from-blue-600 to-blue-400">
             <Header/>
-            <div className="w-full max-w-2xl bg-yellow-200 text-black border rounded-md p-3">
-                <div className="flex justify-around mb-3">
-                    <LanguangesOptionsItem
-                        languanges={languanges}
-                        selectedLanguange={translateFrom}
-                        translate="FROM"
-                        onSelect={handleSelectedLanguange}
-                    />
-                    <LanguangesOptionsItem
-                        languanges={languanges}
-                        selectedLanguange={translateTo}
-                        translate="TO"
-                        onSelect={handleSelectedLanguange}
-                    />
-                </div>
-                <div className="flex justify-around">
-                    <textarea 
-                    rows={5}
-                    cols={25}
-                    placeholder="Digitar Texto" 
-                    className=" resize-none bg-yellow-100 outline-none border-none py-1 px-2"
-                    value={inputValue}
-                    onChange={e => setInputValue(e.target.value)}
-                    ></textarea>
-
-                    <textarea 
-                    rows={5}
-                    cols={25}
-                    placeholder="Tradução"
-                    className="resize-none bg-yellow-100 outline-none border-none py-1 px-2"
-                    value={translatedValue}
-                    ></textarea>
+            <div className="w-full max-w-sm bg-yellow-200 text-black border rounded-md p-2 md:max-w-2xl">
+                <div className="flex flex-col gap-4 md:flex-row md:p-8">
+                    <div className="flex flex-col items-center md:block">
+                        <LanguangesOptionsItem
+                            languanges={languanges}
+                            selectedLanguange={translateFrom}
+                            translate="FROM"
+                            onSelect={handleSelectedLanguange}
+                        />
+                        <textarea 
+                        rows={5}
+                        maxLength={300}
+                        placeholder="Digitar Texto" 
+                        className=" resize-none bg-yellow-100 outline-none border-none py-1 px-2 mt-2 w-full max-w-xs"
+                        value={inputValue}
+                        onChange={e => setInputValue(e.target.value)}
+                        ></textarea>
+                    </div>
+                    
+                    <div className="flex flex-col items-center md:block">
+                        <LanguangesOptionsItem
+                            languanges={languanges}
+                            selectedLanguange={translateTo}
+                            translate="TO"
+                            onSelect={handleSelectedLanguange}
+                        />
+                        <textarea 
+                        rows={5}
+                        maxLength={300}
+                        placeholder="Tradução"
+                        className="resize-none bg-yellow-100 outline-none border-none py-1 px-2 mt-2 w-full max-w-xs"
+                        value={translatedValue}
+                        ></textarea>
+                    </div>    
                 </div>
                 <div className="flex justify-center gap-4 mt-3">
-                    <button onClick={() => translateText(inputValue)} className="bg-yellow-300 py-1 px-2 rounded-md">Traduzir</button>
-                    <button onClick={clear} className="bg-yellow-300 py-1 px-2 rounded-md">Limpar</button>
+                    <button onClick={() => translateText(inputValue)} className="bg-yellow-600 py-1 px-2 rounded-md">Traduzir</button>
+                    <button onClick={clear} className="bg-yellow-600 py-1 px-2 rounded-md">Limpar</button>
                 </div>
             </div>
             <Footer/>

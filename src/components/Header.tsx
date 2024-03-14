@@ -1,5 +1,5 @@
 export const Header = () => {
     return(
-        <header className="text-5xl font-bold text-yellow-300">Tradutor</header>
+        <header><img src={"/images/logo.png"} alt="logo do site"  className="w-40"/></header>
     );
 }
