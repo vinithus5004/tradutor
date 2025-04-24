@@ -3,7 +3,7 @@
 </p>
 
 <p align="center" style="font-size: 2em;font-weight:bold;">
-    Tradutor 🌻 <a href="https://tradutor-viniciusgabriel.vercel.app/" alt="link do site">
+    Tradutor 🌻 <a href="https://tradutor-viniciusgabriel.vercel.app/" alt="link do site" target="_blank">
     Acesse o site aqui</a>    
 </p>
 
