@@ -1,6 +1,6 @@
-<a href="https://github.com/vinithus5004/tradutor" style="display:block" align="center">
+<p href="https://github.com/vinithus5004/tradutor" align="center">
     <img src="public/images/logo.png" alt="logo do site" width="200">
-</a>
+</p>
 
 <p align="center" style="font-size: 2em;font-weight:bold;">
     Tradutor 🌻 <a href="https://tradutor-viniciusgabriel.vercel.app/" alt="link do site">
