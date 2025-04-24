@@ -9,7 +9,7 @@
 
 ## Sobre
 
-Um tradutor que trabalha em 5 línguas diferentes: português brasileiro, inglês, francês, espanhol e italiano. Para que isso seja possível, ele utiliza da [MyMemory API](https://mymemory.translated.net/doc/spec.php){:target="_blank"}.
+Um tradutor que trabalha em 5 línguas diferentes: português brasileiro, inglês, francês, espanhol e italiano. Para que isso seja possível, ele utiliza da [MyMemory API](https://mymemory.translated.net/doc/spec.php).
 
 
 <p align="center">
@@ -18,7 +18,7 @@ Um tradutor que trabalha em 5 línguas diferentes: português brasileiro, inglê
 
 ## Tecnologias
 
-- [Next.js](https://nextjs.org/){:target="_blank"}
-- [React.js](https://react.dev/){:target="_blank"}
-- [TypeScript](https://www.typescriptlang.org/){:target="_blank"}
-- [Tailwind](https://tailwindcss.com/){:target="_blank"}
+- [Next.js](https://nextjs.org/)
+- [React.js](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind](https://tailwindcss.com/)
